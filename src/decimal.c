@@ -6,26 +6,32 @@
 static int columnaDecimal(int c){
     switch (c)
     {
-        //Si lee +, devuelve la columna 1.
         case '+':
             return 1;
-        //Si lee -, devuelve la columna 2.
+
         case '-':
             return 2;
-        //Si lee un digito, devuelve la columna 0.
+
+        case '0':
+            return 3;
+
         default:
-            return 0;
+            if (c >= '1' && c <= '9'){
+                return 0;   // Columna D
+            }
+            return 4;       // Columna Otro
     }
 }
 
 //Verifica si es decimal
 int esDecimal(char *s){
-    //Tabla de transicion / matriz (4 filas, 3 columnas)
-    static int tt[4][3] = {
-        { 2,1,1 },
-        { 2,3,3 },
-        { 2,3,3 },
-        { 3,3,3 },
+    // Tabla de transición (5 estados x 5 columnas del alfabeto reducido)
+    static int tt[5][5] = {
+        { 3,2,2,1,4 },
+        { 4,4,4,4,4 },
+        { 3,4,4,4,4 },
+        { 3,4,4,3,4 },
+        { 4,4,4,4,4 },
     };
 
     int e = 0;
@@ -39,14 +45,12 @@ int esDecimal(char *s){
     }
     
     //Ya que deberia terminar con un numero y no tener
-    //un + o - en medio (devolviendo e = ·), e eventualmente es 2 ESTADO FINAL
-    if(e == 2) return 1;
+    //un + o - en medio, e eventualmente es 3 ESTADO FINAL.
+    //Si resulta solo ser un 0, e sera 1 ESTADO FINAL.
+    if (e == 1 || e == 3) return 1;
 
-    //e no puede ser 1 ya que es la 1er condicion a ver, y jamas vueve a tt[0] 1era linea
-    //Entonces el 3 siempre sera incorrecto
-
-    //Si no cumple con terminar con un numero 
     return 0;
+
 }
 
 //Verifica que una palabra pertenezca al alfabeto (+,-, 0..9)
