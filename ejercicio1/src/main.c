@@ -29,7 +29,7 @@ static void analizarConstante(char *buffer,
 
 int main()
 {
-    printf("Trabajo Practico 1 - Automatas\n");
+    printf("Ejercicio 1 - Cadenas y tipos de constantes\n");
     printf("----------------------------------\n");
 
     int cantDecimal = 0;
@@ -37,10 +37,9 @@ int main()
     int cantHexadecimal = 0;
     int cantErrores = 0;
 
-    char palabra[] = "3123@@0123@0x122@+123412131@0XAFc";
+    char palabra[] = "-123@056@0x1AF@08@0xG@0@+456";
     char buffer[100];
     int j = 0;
-
 
     printf("Cadenas leidas: \n");
     for(int i = 0; palabra[i]; i++){
@@ -76,4 +75,4 @@ int main()
     return 0;
 }
 
-// gcc src/main.c src/decimal.c src/octal.c src/hexadecimal.c -Iinclude -o tp1
+// gcc src/main.c src/decimal.c src/octal.c src/hexadecimal.c -Iinclude -o ejercicio1
