@@ -1,5 +1,11 @@
 # Trabajo Práctico N.º 1 - Sintaxis y Semántica de los Lenguajes
 
+## Alumno
+
+**Kevin Ricardo Bernabe Carnero**
+
+---
+
 Implementación de distintos **Autómatas Finitos Determinísticos (AFD)** en lenguaje **C**, desarrollados para resolver las consignas del Trabajo Práctico N.º 1 de la materia **Sintaxis y Semántica de los Lenguajes**.
 
 El proyecto aborda el reconocimiento de constantes numéricas, la conversión de caracteres a enteros y la validación y evaluación de expresiones aritméticas mediante autómatas y módulos independientes.
@@ -47,7 +53,7 @@ Implementación de autómatas finitos determinísticos para el reconocimiento de
 - Constantes octales.
 - Constantes hexadecimales.
 
-Cada constante es analizada de manera independiente y clasificada según el lenguaje al que pertenece.
+Cada constante es analizada de manera independiente y clasificada según el lenguaje al que pertenece. 
 
 📄 Más información: **ejercicio1/README.md**
 
@@ -111,11 +117,3 @@ o directamente:
 ```bash
 make run
 ```
-
----
-
-## Autor
-
-**Kevin Ricardo Bernabe Carnero**
-
-Trabajo Práctico desarrollado para la materia **Sintaxis y Semántica de los Lenguajes**.
