@@ -19,7 +19,7 @@ En caso de que una constante no pertenezca a ninguno de estos lenguajes, se info
 ### Decimal
 
 ```regex
-[+-]?[0-9]+
+0 | [+-]?[1-9][0-9]*
 ```
 
 ### Octal
@@ -31,7 +31,7 @@ En caso de que una constante no pertenezca a ninguno de estos lenguajes, se info
 ### Hexadecimal
 
 ```regex
-0[xX][0-9a-fA-F]+
+0[xX][0-9A-Fa-f]+
 ```
 
 ---
