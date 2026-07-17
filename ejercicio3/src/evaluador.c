@@ -63,8 +63,7 @@ static int leerTermino(char *expresion, int *i)
     return termino;
 }
 
-// Evalua una expresion respetando
-// la precedencia de la multiplicacion.
+// Evalua una expresion respetando la precedencia de la multiplicacion.
 int evaluarExpresion(char *expresion)
 {
     int i = 0;

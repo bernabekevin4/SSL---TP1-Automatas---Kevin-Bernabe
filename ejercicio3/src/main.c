@@ -4,7 +4,7 @@
 
 int main()
 {
-    char expresion[] = "12+3*4*2-5";
+    char expresion[] = "3+4*7+3-5";
 
     printf("Ejercicio 3 - Resultado de expresion \n");
     printf("-------------------------------------\n");
@@ -20,3 +20,5 @@ int main()
 
     return 0;
 }
+
+// gcc src/main.c src/evaluador.c src/automata.c -Iinclude -o ejercicio3
