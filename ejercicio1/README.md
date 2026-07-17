@@ -161,5 +161,7 @@ Trabajo Práctico N.º 1 - Sintaxis y Semántica de los Lenguajes.
 
 ## Recursos adicionales
 
-- [Informe técnico](../documentacion/SSL TP1_ Informe - Kevin Bernabe.pdf)
+Para una descripción más detallada del desarrollo del ejercicio pueden consultarse los siguientes recursos:
+
+- [Informe técnico](../documentacion/informe/SSL%20TP1_%20Informe%20-%20Kevin%20Bernabe.pdf)
 - [Diagramas de los autómatas](../documentacion/automatas/)
