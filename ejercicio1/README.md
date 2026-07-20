@@ -155,7 +155,7 @@ donde se incluyen:
 
 ## Alumno
 
-**Kevin Bernabé**
+**Kevin Bernabe**
 
 Trabajo Práctico N.º 1 - Sintaxis y Semántica de los Lenguajes.
 

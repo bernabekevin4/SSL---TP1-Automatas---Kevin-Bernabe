@@ -17,6 +17,8 @@ static int leerNumero(char *expresion, int *i){
     int numero = 0;
 
     while(isdigit(expresion[*i])){
+
+        //Por cada digito que tenga el numero, multiplica por 10 y lo suma
         numero = numero * 10 + caracterAEntero(expresion[*i]);
 
         (*i)++;
@@ -27,8 +29,7 @@ static int leerNumero(char *expresion, int *i){
 }
 
 // Ejecuta una operacion aritmetica entre dos enteros.
-static int ejecutarOperacion(char operador, int a, int b)
-{
+static int ejecutarOperacion(char operador, int a, int b){
     switch (operador)
     {
         case '+':
@@ -46,12 +47,10 @@ static int ejecutarOperacion(char operador, int a, int b)
 
 // Lee un término completo formado por multiplicaciones.
 // Ejemplo: "12*3*4" devuelve 144.
-static int leerTermino(char *expresion, int *i)
-{
+static int leerTermino(char *expresion, int *i){
     int termino = leerNumero(expresion, i);
 
-    while (expresion[*i] == '*')
-    {
+    while (expresion[*i] == '*'){
         // Avanza al siguiente número
         (*i)++; 
 
@@ -64,15 +63,14 @@ static int leerTermino(char *expresion, int *i)
 }
 
 // Evalua una expresion respetando la precedencia de la multiplicacion.
-int evaluarExpresion(char *expresion)
-{
+int evaluarExpresion(char *expresion){
     int i = 0;
 
-    // Lee el primer termino
+    // Lee el primer termino. Si no encuentra un *, 
+    // Simplemente retorna el resultado de leerNumero
     int resultado = leerTermino(expresion, &i);
 
-    while (expresion[i] != '\0')
-    {
+    while (expresion[i] != '\0'){
         // Guarda el operador + o -
         char operador = expresion[i];
         i++;
