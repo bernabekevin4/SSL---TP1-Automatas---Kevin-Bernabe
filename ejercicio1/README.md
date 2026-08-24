@@ -153,12 +153,6 @@ donde se incluyen:
 
 ---
 
-## Alumno
-
-**Kevin Bernabe**
-
-Trabajo Práctico N.º 1 - Sintaxis y Semántica de los Lenguajes.
-
 ## Recursos adicionales
 
 Para una descripción más detallada del desarrollo del ejercicio pueden consultarse los siguientes recursos:
