@@ -147,9 +147,8 @@ documentacion/
 
 donde se incluyen:
 
-- Informe técnico.
+- Informe técnico (con capturas de la ejecución).
 - Diagramas de los autómatas.
-- Capturas de ejecución.
 
 ---
 
