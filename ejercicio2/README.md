@@ -101,16 +101,7 @@ documentacion/
 
 donde se incluyen:
 
-- Informe técnico.
-- Capturas de ejecución.
-
----
-
-## Alumno
-
-**Kevin Bernabe**
-
-Trabajo Práctico N.º 1 - Sintaxis y Semántica de los Lenguajes.
+- Informe técnico (con capturas de ejecución).
 
 ---
 
