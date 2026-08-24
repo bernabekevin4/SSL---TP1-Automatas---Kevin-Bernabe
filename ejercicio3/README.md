@@ -124,17 +124,8 @@ documentacion/
 
 donde se incluyen:
 
-- Informe técnico.
+- Informe técnico (con capturas de ejecución).
 - Diagrama del AFD.
-- Capturas de ejecución.
-
----
-
-## Alumno
-
-**Kevin Bernabe**
-
-Trabajo Práctico N.º 1 - Sintaxis y Semántica de los Lenguajes.
 
 ---
 
