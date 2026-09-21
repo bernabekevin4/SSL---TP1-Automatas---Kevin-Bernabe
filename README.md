@@ -86,7 +86,7 @@ Operadores soportados:
 La carpeta **documentacion/** contiene el material utilizado durante el desarrollo del proyecto:
 
 - Informe técnico.
-- Diagramas de los autómatas (concapturas de ejecución).
+- Diagramas de los autómatas (con capturas de ejecución).
 
 ---
 
