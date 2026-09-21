@@ -97,7 +97,7 @@ ejercicio1/
 
 ## Compilación
 
-Desde la carpeta `ejercicio1`:
+Desde la carpeta `ejercicio1` (y en lo posible en el entorno `MSYS2`):
 
 ```bash
 make
@@ -147,17 +147,10 @@ documentacion/
 
 donde se incluyen:
 
-- Informe técnico.
+- Informe técnico (con capturas de la ejecución).
 - Diagramas de los autómatas.
-- Capturas de ejecución.
 
 ---
-
-## Alumno
-
-**Kevin Bernabe**
-
-Trabajo Práctico N.º 1 - Sintaxis y Semántica de los Lenguajes.
 
 ## Recursos adicionales
 
