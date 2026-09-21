@@ -80,7 +80,7 @@ También es posible compilar manualmente:
 gcc src/main.c src/conversion.c -Iinclude -o ejercicio2
 ```
 
-Y ejecutar mediante:
+Y posteriormente ejecutar mediante:
 ```bash
 ./ejercicio2.exe
 ```
