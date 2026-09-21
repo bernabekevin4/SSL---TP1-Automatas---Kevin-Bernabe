@@ -97,22 +97,30 @@ ejercicio1/
 
 ## Compilación
 
-Desde la carpeta `ejercicio1` (y en lo posible en el entorno `MSYS2`):
+Desde la carpeta raíz `ejercicio1`:
 
 ```bash
 make
 ```
 
-o directamente:
+o directamente ejecutar el programa con:
 
 ```bash
 make run
 ```
 
+**Nota:** Los comandos `make` están preparados para ejecutarse desde el entorno **MSYS2**. Es necesario ubicarse previamente en la carpeta raíz del ejercicio correspondiente antes de ejecutar cualquier comando del `Makefile`.
+
 También es posible compilar manualmente:
+
 
 ```bash
 gcc src/main.c src/decimal.c src/octal.c src/hexadecimal.c -Iinclude -o ejercicio1
+```
+
+Y posteriormente ejecutar mediante:
+```bash
+./ejercicio1.exe
 ```
 
 ---
