@@ -53,7 +53,7 @@ Implementación de autómatas finitos determinísticos para el reconocimiento de
 - Constantes octales.
 - Constantes hexadecimales.
 
-Cada constante es analizada de manera independiente y clasificada según el lenguaje al que pertenece. 
+Cada constante es analizada de manera independiente y clasificada según el lenguaje al que pertenece.
 
 📄 Más información: **ejercicio1/README.md**
 
@@ -86,8 +86,7 @@ Operadores soportados:
 La carpeta **documentacion/** contiene el material utilizado durante el desarrollo del proyecto:
 
 - Informe técnico.
-- Diagramas de los autómatas.
-- Capturas de ejecución.
+- Diagramas de los autómatas (concapturas de ejecución).
 
 ---
 
@@ -98,6 +97,8 @@ Para compilar los ejercicios se recomienda disponer de:
 - GCC
 - GNU Make
 - MSYS2 (Windows)
+
+**Nota:** Los comandos `make` están preparados para ejecutarse desde el entorno **MSYS2**. Es necesario ubicarse previamente en la carpeta raíz del ejercicio correspondiente antes de ejecutar cualquier comando del `Makefile`.
 
 ---
 

@@ -67,7 +67,7 @@ int main()
     printf("Constantes hexadecimales: %d\n", cantHexadecimal);
     
     if (cantErrores > 0) {
-        printf("\nSe detectaron errores %d lexicos.\n", cantErrores);
+        printf("\nSe detectaron %d errores lexicos.\n", cantErrores);
     } else {
         printf("\nNo se detectaron errores lexicos.\n");
     }
