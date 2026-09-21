@@ -97,7 +97,7 @@ ejercicio1/
 
 ## Compilación
 
-Desde la carpeta `ejercicio1`:
+Desde la carpeta `ejercicio1` (y en lo posible en el entorno `MSYS2`):
 
 ```bash
 make
