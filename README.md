@@ -85,10 +85,11 @@ Operadores soportados:
 
 La carpeta **documentacion/** contiene el material utilizado durante el desarrollo del proyecto:
 
-- Informe técnico.
-- Diagramas de los autómatas (con capturas de ejecución).
+- Informe técnico del TP.
+- Diagramas de los autómatas.
+- Capturas de ejecución incluidas en el informe técnico.
 
-Recomiendo **fuertemente** consulte el **Informe** para entender mejor los procesos de **compilación** y **ejecución**.
+Se recomienda consultar el informe técnico para comprender en mayor detalle los procesos de compilación, ejecución y funcionamiento de cada ejercicio.
 
 ---
 
