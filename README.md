@@ -88,6 +88,8 @@ La carpeta **documentacion/** contiene el material utilizado durante el desarrol
 - Informe técnico.
 - Diagramas de los autómatas (con capturas de ejecución).
 
+Recomiendo **fuertemente** consulte el **Informe** para entender mejor los procesos de **compilación** y **ejecución**.
+
 ---
 
 ## Requisitos

@@ -39,21 +39,26 @@ int main()
 
     char palabra[] = "-123@056@0x1AF@08@0xG@0@+456";
     char buffer[100];
-    int j = 0;
+    int j = 0; // Indice del buffer
 
     printf("Cadenas leidas: \n");
     for(int i = 0; palabra[i]; i++){
         
         if(palabra[i] != '@'){
-            buffer[j++] = palabra[i];
-
+            buffer[j] = palabra[i];
+            j++;
         }else{
-            buffer[j] = '\0';
-            analizarConstante(buffer, &cantDecimal, &cantOctal, &cantHexadecimal, &cantErrores);
+            buffer[j] = '\0'; //Llega al final de una expresion leida
+            
+            //Analiza la constante y pasamos los contadores por referencia.
+            analizarConstante(buffer, &cantDecimal, &cantOctal, &cantHexadecimal, &cantErrores); 
+            
+            // Reseteo el indice para volver a llenar el buffer para una nueva lectura
             j = 0;
         }
     }
 
+    // Aseguramos que no queden cadenas por leer en caso de no encontrar @
     if(j > 0){
         buffer[j] = '\0';
         analizarConstante(buffer, &cantDecimal, &cantOctal, &cantHexadecimal, &cantErrores);

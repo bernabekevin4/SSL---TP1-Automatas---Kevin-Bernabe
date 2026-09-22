@@ -4,7 +4,7 @@
 // Devuelve -1 si el carácter no representa un dígito decimal.
 int caracterAEntero(char c){
     if(c >= '0' && c <= '9'){
-        return c - '0';
+        return c - '0'; // Se le resta el valor ASCII de 0
     }
 
     return -1;

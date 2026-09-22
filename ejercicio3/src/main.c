@@ -10,6 +10,7 @@ int main()
     printf("-------------------------------------\n");
     printf("Expresion a evaluar: %s\n", expresion);
 
+    // Primero verificamos que la expresion sea valida previo a su evaluacion
     if (verificarExpresion(expresion) && esExpresionValida(expresion)){
         printf("Expresion valida\n");
 

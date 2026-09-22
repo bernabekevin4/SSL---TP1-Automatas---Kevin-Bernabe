@@ -28,7 +28,7 @@ static int leerNumero(char *expresion, int *i){
 
 }
 
-// Ejecuta una operacion aritmetica entre dos enteros.
+// Ejecuta una operacion aritmetica entre dos enteros segun un operador recibido.
 static int ejecutarOperacion(char operador, int a, int b){
     switch (operador)
     {
@@ -45,20 +45,28 @@ static int ejecutarOperacion(char operador, int a, int b){
     return 0;
 }
 
-// Lee un término completo formado por multiplicaciones.
-// Ejemplo: "12*3*4" devuelve 144.
+// Lee un término completo. Se toma un caso especial al manejar multiplicaciones *
+// Ejemplo: "12*3*4" devuelve 144 como un mismo termino.
 static int leerTermino(char *expresion, int *i){
+    
+    // Lee hasta encontrar un operador
     int termino = leerNumero(expresion, i);
 
+    // Si encuentra un *, maneja la multiplicacion
     while (expresion[*i] == '*'){
         // Avanza al siguiente número
         (*i)++; 
 
+        //Vuelve a leer un numero hasta encontrar un operador
         int numero = leerNumero(expresion, i);
 
+        // Multiplica al termino anteriormente encontrado por este numero
         termino = ejecutarOperacion('*', termino, numero);
+
+        // Se repite si luego de estas operaciones, conforme cambia i, expresion[*i] sigue siendo igual a '*'
     }
 
+    // Retorna el resultado del termino leido (solo numero leido u operado con *)
     return termino;
 }
 
@@ -66,8 +74,7 @@ static int leerTermino(char *expresion, int *i){
 int evaluarExpresion(char *expresion){
     int i = 0;
 
-    // Lee el primer termino. Si no encuentra un *, 
-    // Simplemente retorna el resultado de leerNumero
+    // Lee el primer termino y almacena el resultado a lo largo de las operaciones. 
     int resultado = leerTermino(expresion, &i);
 
     while (expresion[i] != '\0'){
